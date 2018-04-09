@@ -4,16 +4,22 @@ class Header extends Component {
   render() {
     return (
       <header>
-        <nav>
-          <div id="logo">Logo</div>
-          <ul>
-            <li>Home</li>
-            <li>Services</li>
-            <li>Portfolio</li>
-            <li>About</li>
-            <li>Contact</li>
-          </ul>
-        </nav>
+        <div className="headerTop">
+          <div className="left">
+            <img src="./img/logo.png" alt="" />
+          </div>
+          <div className="right">
+            <nav className="menu">
+              <ul>
+                <li className="active">Home</li>
+                <li>Services</li>
+                <li>Portfolio</li>
+                <li>About</li>
+                <li>Contact</li>
+              </ul>
+            </nav>
+          </div>
+        </div>
       </header>
     );
   }

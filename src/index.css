@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto");
 :root {
   --navColor: #3f4244;
+  --borderRadius: 8px;
 }
 
 html {
@@ -23,30 +24,61 @@ body {
   padding: 0;
 }
 
+img {
+  width: 100%;
+}
+
 header {
   display: flex;
   flex-direction: column;
   justify-content: center;
   height: 100px;
-  background-color: #ccc;
 }
 
-nav {
+.headerTop {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.menu {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
 
-ul {
+.menu ul {
   list-style: none;
   margin: 0;
   padding: 0;
-  font-size: 0.8rem;
+  font-size: 0.95rem;
   text-transform: uppercase;
 }
 
-li {
-  padding: 1rem;
+.menu ul li {
+  padding: 1rem 1.6rem;
   float: left;
   color: var(--navColor);
+}
+
+.menu ul li.active {
+  background-image: -moz-linear-gradient(
+    -90deg,
+    rgb(109, 255, 198) 1%,
+    rgb(63, 210, 206) 99%
+  );
+  background-image: -webkit-linear-gradient(
+    -90deg,
+    rgb(109, 255, 198) 1%,
+    rgb(63, 210, 206) 99%
+  );
+  background-image: -ms-linear-gradient(
+    -90deg,
+    rgb(109, 255, 198) 1%,
+    rgb(63, 210, 206) 99%
+  );
+  padding: 16px 30px;
+  border-radius: var(--borderRadius);
+  color: #ffffff;
 }
