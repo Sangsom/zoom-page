@@ -2,6 +2,7 @@
 :root {
   --navColor: #3f4244;
   --borderRadius: 8px;
+  --linkSize: 15px;
 }
 
 html {
@@ -28,18 +29,32 @@ img {
   width: 100%;
 }
 
+a {
+  font-size: var(--linkSize);
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color: #000;
+  text-decoration: none;
+}
+
 header {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 100px;
 }
+
+/* Header Top */
 
 .headerTop {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
+  height: 100px;
 }
 
 .menu {
@@ -52,7 +67,7 @@ header {
   list-style: none;
   margin: 0;
   padding: 0;
-  font-size: 0.95rem;
+  font-size: var(--linkSize);
   text-transform: uppercase;
 }
 
@@ -81,4 +96,67 @@ header {
   padding: 16px 30px;
   border-radius: var(--borderRadius);
   color: #ffffff;
+}
+
+/* Header Bottom */
+.headerBottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: -moz-linear-gradient(
+    -89.727deg,
+    rgb(109, 255, 198) 1%,
+    rgb(63, 210, 206) 99%
+  );
+  background-image: -webkit-linear-gradient(
+    -89.727deg,
+    rgb(109, 255, 198) 1%,
+    rgb(63, 210, 206) 99%
+  );
+  background-image: -ms-linear-gradient(
+    -89.727deg,
+    rgb(109, 255, 198) 1%,
+    rgb(63, 210, 206) 99%
+  );
+  height: 700px;
+}
+
+.headerBottom h1 {
+  font-size: 3.8rem;
+  color: #fff;
+  font-family: "Roboto";
+  font-weight: 300;
+}
+
+.headerBottom a {
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 500;
+  padding: 25px 65px;
+  background-image: -moz-linear-gradient(
+    -90deg,
+    rgb(255, 108, 84) 1%,
+    rgb(255, 43, 89) 99%
+  );
+  background-image: -webkit-linear-gradient(
+    -90deg,
+    rgb(255, 108, 84) 1%,
+    rgb(255, 43, 89) 99%
+  );
+  background-image: -ms-linear-gradient(
+    -90deg,
+    rgb(255, 108, 84) 1%,
+    rgb(255, 43, 89) 99%
+  );
+  border-radius: var(--borderRadius);
+}
+
+.Path {
+  position: absolute;
+  left: 838px;
+  top: 480px;
+  width: 250px;
+  height: 70px;
+  z-index: 258;
 }

@@ -6,7 +6,9 @@ class Header extends Component {
       <header>
         <div className="headerTop">
           <div className="left">
-            <img src="./img/logo.png" alt="" />
+            <a href="/">
+              <img src="./img/logo.png" alt="Zoom" />
+            </a>
           </div>
           <div className="right">
             <nav className="menu">
@@ -19,6 +21,10 @@ class Header extends Component {
               </ul>
             </nav>
           </div>
+        </div>
+        <div className="headerBottom">
+          <h1>Try Design, You'll Like It.</h1>
+          <a href="">Show me then !!!</a>
         </div>
       </header>
     );
