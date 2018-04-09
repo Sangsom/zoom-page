@@ -12,14 +12,16 @@ const WebPages = () => {
         </p>
       </div>
 
-      <div className="browser leftBrowser">
-        <img src="./img/left-browser.png" alt="Left Browser" />
-      </div>
-      <div className="browser middleBrowser">
-        <img src="./img/middle-browser.png" alt="Middle Browser" />
-      </div>
-      <div className="browser rightBrowser">
-        <img src="./img/right-browser.png" alt="Right Browser" />
+      <div className="browserWrapper">
+        <div className="browser leftBrowser">
+          <img src="./img/left-browser.png" alt="Left Browser" />
+        </div>
+        <div className="browser middleBrowser">
+          <img src="./img/middle-browser.png" alt="Middle Browser" />
+        </div>
+        <div className="browser rightBrowser">
+          <img src="./img/right-browser.png" alt="Right Browser" />
+        </div>
       </div>
     </section>
   );
