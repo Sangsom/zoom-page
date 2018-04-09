@@ -1,18 +1,13 @@
 import React, { Component } from "react";
 import Header from "./Header";
+import Main from "./Main";
 
 class Root extends Component {
   render() {
     return (
       <React.Fragment>
         <Header />
-        <h1>zoom page</h1>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis
-          repellendus deleniti necessitatibus, magnam vel corrupti impedit
-          accusantium consequuntur, minima quis aliquam doloremque officiis
-          similique quam culpa, alias dicta ipsa doloribus.
-        </p>
+        <Main />
       </React.Fragment>
     );
   }
