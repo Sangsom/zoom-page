@@ -323,3 +323,97 @@ header {
   bottom: -10px;
   z-index: 10;
 }
+
+/* Portfolio */
+#portfolio {
+  min-height: 1300px;
+  background-image: -moz-linear-gradient(
+    -73.971deg,
+    rgb(109, 255, 198) 1%,
+    rgb(63, 210, 206) 99%
+  );
+  background-image: -webkit-linear-gradient(
+    -73.971deg,
+    rgb(109, 255, 198) 1%,
+    rgb(63, 210, 206) 99%
+  );
+  background-image: -ms-linear-gradient(
+    -73.971deg,
+    rgb(109, 255, 198) 1%,
+    rgb(63, 210, 206) 99%
+  );
+  padding: 2rem;
+}
+
+#portfolio .header {
+  text-align: center;
+  width: 40%;
+  margin: 0 auto;
+  padding-top: 3rem;
+}
+
+#portfolio h2 {
+  font-weight: 400;
+  color: #fff;
+}
+
+#portfolio p {
+  font-weight: 300;
+  color: #fff;
+  font-size: 13px;
+}
+
+#portfolio .projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.projects ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  color: var(--darkGray);
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.projects ul li {
+  float: left;
+  padding: 35px;
+}
+
+.projectWrapper {
+  width: 70%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.projectCard {
+  max-width: 371px;
+  text-align: center;
+  background-color: #fff;
+  margin-bottom: 30px;
+}
+
+.projectCard .content {
+  padding: 2rem;
+}
+
+#portfolio .projectCard h2 {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--darkGray);
+}
+
+#portfolio .projectCard p {
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--lightGray);
+}
+
+#portfolio a {
+  margin-top: 2rem;
+}
