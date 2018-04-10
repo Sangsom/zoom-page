@@ -5,6 +5,8 @@
   --linkSize: 15px;
   --darkGray: #3f4244;
   --lightGray: #929ba0;
+  --blueColor: #10cab7;
+  --statsBgColor: #233537;
 }
 
 html {
@@ -29,8 +31,8 @@ body {
 
 img {
   width: 100%;
+  height: auto;
 }
-
 a {
   font-size: var(--linkSize);
 }
@@ -174,7 +176,7 @@ header {
   justify-content: center;
 }
 
-.card {
+.services .card {
   width: 271px;
   height: 276px;
   overflow: hidden;
@@ -183,12 +185,12 @@ header {
   margin-bottom: 90px;
 }
 
-.card img {
+.services .card img {
   width: 129px;
   height: 129px;
 }
 
-.card h2 {
+.services .card h2 {
   font-weight: 700;
   text-transform: uppercase;
   font-size: 15px;
@@ -196,7 +198,7 @@ header {
   margin-bottom: 2.5rem;
 }
 
-.card p {
+.services .card p {
   font-size: 13px;
   color: var(--lightGray);
 }
@@ -416,4 +418,33 @@ header {
 
 #portfolio a {
   margin-top: 2rem;
+}
+
+/* Stats Section */
+.stats {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 340px;
+  background: var(--statsBgColor);
+}
+
+.stats .card {
+  text-align: center;
+  margin: 0 80px;
+}
+
+.stats .card img {
+  width: auto;
+}
+
+.stats .card h2.total {
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.stats .card p {
+  font-size: 13px;
+  color: var(--blueColor);
+  text-transform: uppercase;
 }
