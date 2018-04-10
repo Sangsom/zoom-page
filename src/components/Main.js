@@ -4,6 +4,7 @@ import WebPages from "./WebPages";
 import FullyResponsive from "./FullyResponsive";
 import Portfolio from "./Portfolio";
 import Stats from "./Stats";
+import Team from "./Team";
 
 const Main = () => {
   return (
@@ -13,6 +14,7 @@ const Main = () => {
       <FullyResponsive />
       <Portfolio />
       <Stats />
+      <Team />
     </main>
   );
 };

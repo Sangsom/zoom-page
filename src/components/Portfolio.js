@@ -84,7 +84,7 @@ const Portfolio = () => {
         </div>
 
         <a href="">
-          <i class="fas fa-arrow-alt-circle-down fa-3x" />
+          <i className="fas fa-arrow-alt-circle-down fa-3x" />
         </a>
       </div>
     </section>

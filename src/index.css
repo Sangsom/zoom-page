@@ -7,6 +7,7 @@
   --lightGray: #929ba0;
   --blueColor: #10cab7;
   --statsBgColor: #233537;
+  --teamBgColor: #5bedc9;
 }
 
 html {
@@ -421,7 +422,7 @@ header {
 }
 
 /* Stats Section */
-.stats {
+#stats {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -429,22 +430,80 @@ header {
   background: var(--statsBgColor);
 }
 
-.stats .card {
+#stats .card {
   text-align: center;
   margin: 0 80px;
 }
 
-.stats .card img {
+#stats .card img {
   width: auto;
 }
 
-.stats .card h2.total {
+#stats .card h2.total {
   font-weight: 400;
   color: #ffffff;
 }
 
-.stats .card p {
+#stats .card p {
   font-size: 13px;
   color: var(--blueColor);
   text-transform: uppercase;
+}
+
+/* Team Section */
+#team {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 730px;
+}
+
+#team .wrapper {
+  text-align: center;
+  max-width: 50%;
+}
+
+#team .wrapper h2 {
+  font-weight: 400;
+  color: var(--darkGray);
+}
+
+#team .wrapper p {
+  font-weight: 300;
+  font-size: 13px;
+  color: var(--lightGray);
+}
+
+#team .teamWrapper {
+  display: flex;
+}
+
+#team .teamWrapper .card {
+  max-width: 270px;
+  margin: 0 15px;
+  background: var(--teamBgColor);
+  text-align: center;
+}
+
+#team .teamWrapper .card .memberDetails {
+  padding: 15px 25px;
+}
+
+#team .teamWrapper .card h2 {
+  font-weight: 500;
+  color: var(--darkGray);
+  font-size: 20px;
+}
+
+#team .teamWrapper .card h3 {
+  font-weight: 400;
+  font-size: 13px;
+  color: #ffffff;
+}
+
+#team .teamWrapper .card p {
+  font-weight: 400;
+  color: var(--darkGray);
+  font-size: 15px;
 }

@@ -25,9 +25,9 @@ const stats = [
 
 const Stats = () => {
   return (
-    <div className="stats">
+    <div id="stats">
       {stats.map(s => (
-        <div className="card">
+        <div key={s.name} className="card">
           <img src={`./img/${s.icon}`} alt={s.name} />
           <h2 className="total">{s.total}</h2>
           <p>{s.name}</p>
