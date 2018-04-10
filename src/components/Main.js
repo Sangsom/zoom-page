@@ -5,6 +5,7 @@ import FullyResponsive from "./FullyResponsive";
 import Portfolio from "./Portfolio";
 import Stats from "./Stats";
 import Team from "./Team";
+import Quote from "./Quote";
 
 const Main = () => {
   return (
@@ -15,6 +16,7 @@ const Main = () => {
       <Portfolio />
       <Stats />
       <Team />
+      <Quote />
     </main>
   );
 };
