@@ -7,6 +7,7 @@
   --lightGray: #929ba0;
   --blueColor: #10cab7;
   --statsBgColor: #233537;
+  --newsletterBgColor: #233537;
   --teamBgColor: #5bedc9;
 }
 
@@ -551,4 +552,29 @@ header {
 
 #quote .arrow {
   padding: 20px 15px;
+}
+
+/* Newsletter Section */
+#newsletter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  background: var(--newsletterBgColor);
+}
+
+#newsletter h2 {
+  font-weight: 400;
+  font-size: 20px;
+  color: #ffffff;
+  margin-bottom: 50px;
+}
+
+.subscribe {
+  font-weight: 400;
+  font-size: 13px;
+  color: #ffffff;
+  padding: 15px 50px;
+  border: 1px solid #52e5cb;
 }

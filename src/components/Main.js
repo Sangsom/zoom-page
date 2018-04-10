@@ -6,6 +6,7 @@ import Portfolio from "./Portfolio";
 import Stats from "./Stats";
 import Team from "./Team";
 import Quote from "./Quote";
+import Newsletter from "./Newsletter";
 
 const Main = () => {
   return (
@@ -17,6 +18,7 @@ const Main = () => {
       <Stats />
       <Team />
       <Quote />
+      <Newsletter />
     </main>
   );
 };
