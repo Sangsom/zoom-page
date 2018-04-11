@@ -10,6 +10,7 @@ import Newsletter from "./Newsletter";
 import About from "./About";
 import Add from "./Add";
 import Clients from "./Clients";
+import ContactUs from "./ContactUs";
 
 const Main = () => {
   return (
@@ -25,6 +26,7 @@ const Main = () => {
       <About />
       <Add />
       <Clients />
+      <ContactUs />
     </main>
   );
 };
