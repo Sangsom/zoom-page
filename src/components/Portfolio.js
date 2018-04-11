@@ -1,9 +1,49 @@
 import React from "react";
+import "../styles/Portfolio.css";
+
+const projects = [
+  {
+    img: "projectImg.png",
+    title: "Web Design",
+    description:
+      "Eum cu tantas legere complectitur, hinc utamur ea eaum cu tantas legere complectitur."
+  },
+  {
+    img: "projectImg.png",
+    title: "Photography",
+    description:
+      "Eum cu tantas legere complectitur, hinc utamur ea eaum cu tantas legere complectitur."
+  },
+  {
+    img: "projectImg.png",
+    title: "Programming",
+    description:
+      "Eum cu tantas legere complectitur, hinc utamur ea eaum cu tantas legere complectitur."
+  },
+  {
+    img: "projectImg.png",
+    title: "Web Design",
+    description:
+      "Eum cu tantas legere complectitur, hinc utamur ea eaum cu tantas legere complectitur."
+  },
+  {
+    img: "projectImg.png",
+    title: "Photography",
+    description:
+      "Eum cu tantas legere complectitur, hinc utamur ea eaum cu tantas legere complectitur."
+  },
+  {
+    img: "projectImg.png",
+    title: "Programming",
+    description:
+      "Eum cu tantas legere complectitur, hinc utamur ea eaum cu tantas legere complectitur."
+  }
+];
 
 const Portfolio = () => {
   return (
-    <section id="portfolio">
-      <div className="header">
+    <section id="portfolio" className="Portfolio">
+      <div className="Portfolio_header">
         <h2>The Design That Likes To Say Yes.</h2>
         <p>
           Eum cu tantas legere complectitur, hinc utamur ea eam. Eum patrioque
@@ -11,7 +51,7 @@ const Portfolio = () => {
           vis cu ubique referrentur, sed eu dicant expetendis.
         </p>
       </div>
-      <div className="projects">
+      <div className="Portfolio_projects">
         <nav>
           <ul>
             <li>All</li>
@@ -20,67 +60,16 @@ const Portfolio = () => {
             <li>Graphic Design</li>
           </ul>
         </nav>
-        <div className="projectWrapper">
-          <div className="projectCard">
-            <img src="./img/projectImg.png" alt="" />
-            <div className="content">
-              <h2>Web Design</h2>
-              <p>
-                Eum cu tantas legere complectitur, hinc utamur ea eaum cu tantas
-                legere complectitur.
-              </p>
+        <div className="Portfolio_projectWrapper">
+          {projects.map((project, index) => (
+            <div key={index} className="Portfolio_projectCard">
+              <img src={`./img/${project.img}`} alt={project.title} />
+              <div className="content">
+                <h2>{project.title}</h2>
+                <p>{project.description}</p>
+              </div>
             </div>
-          </div>
-          <div className="projectCard">
-            <img src="./img/projectImg.png" alt="" />
-            <div className="content">
-              <h2>Photography</h2>
-              <p>
-                Eum cu tantas legere complectitur, hinc utamur ea eaum cu tantas
-                legere complectitur.
-              </p>
-            </div>
-          </div>
-          <div className="projectCard">
-            <img src="./img/projectImg.png" alt="" />
-            <div className="content">
-              <h2>Programming</h2>
-              <p>
-                Eum cu tantas legere complectitur, hinc utamur ea eaum cu tantas
-                legere complectitur.
-              </p>
-            </div>
-          </div>
-          <div className="projectCard">
-            <img src="./img/projectImg.png" alt="" />
-            <div className="content">
-              <h2>Web Design</h2>
-              <p>
-                Eum cu tantas legere complectitur, hinc utamur ea eaum cu tantas
-                legere complectitur.
-              </p>
-            </div>
-          </div>
-          <div className="projectCard">
-            <img src="./img/projectImg.png" alt="" />
-            <div className="content">
-              <h2>Photography</h2>
-              <p>
-                Eum cu tantas legere complectitur, hinc utamur ea eaum cu tantas
-                legere complectitur.
-              </p>
-            </div>
-          </div>
-          <div className="projectCard">
-            <img src="./img/projectImg.png" alt="" />
-            <div className="content">
-              <h2>Programming</h2>
-              <p>
-                Eum cu tantas legere complectitur, hinc utamur ea eaum cu tantas
-                legere complectitur.
-              </p>
-            </div>
-          </div>
+          ))}
         </div>
 
         <a href="">

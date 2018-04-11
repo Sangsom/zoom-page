@@ -1,0 +1,92 @@
+.Portfolio {
+  min-height: 1300px;
+  background-image: -moz-linear-gradient(
+    -73.971deg,
+    rgb(109, 255, 198) 1%,
+    rgb(63, 210, 206) 99%
+  );
+  background-image: -webkit-linear-gradient(
+    -73.971deg,
+    rgb(109, 255, 198) 1%,
+    rgb(63, 210, 206) 99%
+  );
+  background-image: -ms-linear-gradient(
+    -73.971deg,
+    rgb(109, 255, 198) 1%,
+    rgb(63, 210, 206) 99%
+  );
+  padding: 2rem;
+}
+
+.Portfolio_header {
+  text-align: center;
+  width: 40%;
+  margin: 0 auto;
+  padding-top: 3rem;
+}
+
+.Portfolio h2 {
+  font-weight: 400;
+  color: #fff;
+}
+
+.Portfolio p {
+  font-weight: 300;
+  color: #fff;
+  font-size: 13px;
+}
+
+.Portfolio_projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Portfolio_projects ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  color: var(--darkGray);
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.Portfolio_projects ul li {
+  float: left;
+  padding: 35px;
+}
+
+.Portfolio_projectWrapper {
+  width: 70%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.Portfolio_projectCard {
+  max-width: 371px;
+  text-align: center;
+  background-color: #fff;
+  margin-bottom: 30px;
+}
+
+.Portfolio_projectCard .content {
+  padding: 2rem;
+}
+
+.Portfolio_projectCard h2 {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--darkGray);
+}
+
+.Portfolio_projectCard p {
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--lightGray);
+}
+
+.Portfolio a {
+  margin-top: 2rem;
+}
