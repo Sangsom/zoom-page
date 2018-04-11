@@ -1,15 +1,16 @@
 import React from "react";
+import "../styles/Add.css";
 
 const Add = () => {
   return (
-    <section id="add">
-      <div className="left">
-        <div className="wrapper">
-          <img src="./img/phone-mockup.png" alt="" />
+    <section id="add" className="Add">
+      <div className="Add_left">
+        <div className="Add_wrapper">
+          <img src="./img/phone-mockup.png" alt="Phone mockup" />
         </div>
       </div>
-      <div className="right">
-        <div className="wrapper">
+      <div className="Add_right">
+        <div className="Add_wrapper">
           <h2>Modern Design</h2>
           <h3>Responsive Design</h3>
           <p>

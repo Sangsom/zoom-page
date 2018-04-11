@@ -1,0 +1,65 @@
+.Add {
+  display: flex;
+  height: 530px;
+  background-image: -moz-linear-gradient(
+    -76.044deg,
+    rgb(109, 255, 198) 1%,
+    rgb(63, 210, 206) 99%
+  );
+  background-image: -webkit-linear-gradient(
+    -76.044deg,
+    rgb(109, 255, 198) 1%,
+    rgb(63, 210, 206) 99%
+  );
+  background-image: -ms-linear-gradient(
+    -76.044deg,
+    rgb(109, 255, 198) 1%,
+    rgb(63, 210, 206) 99%
+  );
+}
+
+.Add_left {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-basis: 45%;
+}
+
+.Add img {
+  position: relative;
+  width: auto;
+  right: -210px;
+  bottom: -40px;
+}
+
+.Add_right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-basis: 55%;
+}
+
+.Add_right .Add_wrapper {
+  flex-shrink: 1;
+  max-width: 70%;
+}
+
+.Add_right h2 {
+  font-weight: 400;
+  font-size: 25px;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+.Add_right h3 {
+  font-weight: 500;
+  font-size: 15px;
+  color: #243638;
+}
+
+.Add_right p {
+  font-weight: 400;
+  font-size: 13px;
+  color: #ffffff;
+}
