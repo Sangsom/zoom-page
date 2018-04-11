@@ -1,0 +1,43 @@
+.Quote {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: -moz-linear-gradient(
+    -89.706deg,
+    rgb(255, 108, 84) 1%,
+    rgb(255, 43, 89) 99%
+  );
+  background-image: -webkit-linear-gradient(
+    -89.706deg,
+    rgb(255, 108, 84) 1%,
+    rgb(255, 43, 89) 99%
+  );
+  background-image: -ms-linear-gradient(
+    -89.706deg,
+    rgb(255, 108, 84) 1%,
+    rgb(255, 43, 89) 99%
+  );
+  height: 370px;
+}
+
+.Quote img {
+  width: auto;
+}
+
+.Quote h2 {
+  font-weight: 400;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.Quote h3 {
+  font-weight: 400;
+  font-size: 13px;
+  color: #ffffff;
+  margin: 0;
+}
+
+.Quote_arrow {
+  padding: 20px 15px;
+}
