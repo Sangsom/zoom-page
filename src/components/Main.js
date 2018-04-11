@@ -12,6 +12,7 @@ import Add from "./Add";
 import Clients from "./Clients";
 import ContactUs from "./ContactUs";
 import Map from "./Map";
+import Footer from "./Footer";
 
 const Main = () => {
   return (
@@ -29,6 +30,7 @@ const Main = () => {
       <Clients />
       <ContactUs />
       <Map />
+      <Footer />
     </main>
   );
 };
