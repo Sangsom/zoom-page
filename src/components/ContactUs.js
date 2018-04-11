@@ -1,4 +1,5 @@
 import React from "react";
+import "../styles/ContactUs.css";
 
 const ContactUs = () => {
   const handleButton = e => {
@@ -6,8 +7,8 @@ const ContactUs = () => {
   };
 
   return (
-    <section id="contactUs">
-      <div className="wrapper">
+    <section id="contactUs" className="ContactUs">
+      <div className="ContactUs_wrapper">
         <h2>Contact Us</h2>
         <p>
           Eum cu tantas legere complectitur, hinc utamur ea eam. Eum patrioque
@@ -16,21 +17,11 @@ const ContactUs = () => {
         </p>
       </div>
 
-      <div className="formWrapper">
-        <form action="">
+      <div className="ContactUs_formWrapper">
+        <form className="ContactUs_form" action="">
           <div className="halfWrapper">
-            <input
-              type="text"
-              className="half"
-              name="name"
-              placeholder="Your name here"
-            />
-            <input
-              type="email"
-              className="half"
-              name="email"
-              placeholder="Your mail here"
-            />
+            <input type="text" name="name" placeholder="Your name here" />
+            <input type="email" name="email" placeholder="Your mail here" />
           </div>
 
           <input type="text" name="message" placeholder="Your message here" />
