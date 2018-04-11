@@ -75,63 +75,6 @@ a:active {
   border-radius: var(--borderRadius);
 }
 
-/* Fully Responsive */
-
-#fullyResponsive {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  height: 570px;
-}
-
-#fullyResponsive .right {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-#fullyResponsive .wrapper {
-  width: 600px;
-}
-
-#fullyResponsive h2 {
-  font-weight: 300;
-  font-style: italic;
-  color: var(--darkGray);
-}
-
-#fullyResponsive p {
-  font-weight: 300;
-  font-size: 15px;
-  color: var(--lightGray);
-  margin-bottom: 60px;
-}
-
-#fullyResponsive .left {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.phone {
-  position: relative;
-  display: inline-block;
-}
-
-.leftPhone {
-  width: 214px;
-  height: 434px;
-  z-index: 15;
-}
-
-.rightPhone {
-  width: 162px;
-  height: 327px;
-  left: -50px;
-  bottom: -10px;
-  z-index: 10;
-}
-
 /* Portfolio */
 
 #portfolio {

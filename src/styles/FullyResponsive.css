@@ -1,0 +1,54 @@
+.FullyResponsive {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: 570px;
+}
+
+.FullyResponsive_right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.FullyResponsive_wrapper {
+  width: 600px;
+}
+
+.FullyResponsive h2 {
+  font-weight: 300;
+  font-style: italic;
+  color: var(--darkGray);
+}
+
+.FullyResponsive p {
+  font-weight: 300;
+  font-size: 15px;
+  color: var(--lightGray);
+  margin-bottom: 60px;
+}
+
+.FullyResponsive_left {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.FullyResponsive_phone {
+  position: relative;
+  display: inline-block;
+}
+
+.FullyResponsive_leftPhone {
+  width: 214px;
+  height: 434px;
+  z-index: 15;
+}
+
+.FullyResponsive_rightPhone {
+  width: 162px;
+  height: 327px;
+  left: -50px;
+  bottom: -10px;
+  z-index: 10;
+}

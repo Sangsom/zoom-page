@@ -1,18 +1,19 @@
 import React from "react";
+import "../styles/FullyResponsive.css";
 
 const FullyResponsive = () => {
   return (
-    <section id="fullyResponsive">
-      <div className="left">
-        <div className="phone leftPhone">
+    <section id="fullyResponsive" className="FullyResponsive">
+      <div className="FullyResponsive_left">
+        <div className="FullyResponsive_phone FullyResponsive_leftPhone">
           <img src="./img/left-phone.png" alt="Left Phone" />
         </div>
-        <div className="phone rightPhone">
+        <div className="FullyResponsive_phone FullyResponsive_rightPhone">
           <img src="./img/right-phone.png" alt="Right Phone" />
         </div>
       </div>
-      <div className="right">
-        <div className="wrapper">
+      <div className="FullyResponsive_right">
+        <div className="FullyResponsive_wrapper">
           <h2>Fully Responsive</h2>
           <p>
             Eum cu tantas legere complectitur, hinc utamur ea eam. Lorem ipsum
