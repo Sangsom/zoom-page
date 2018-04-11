@@ -1,14 +1,12 @@
 import React from "react";
+import "../styles/Footer.css";
 
 const Footer = () => {
   return (
-    <footer>
+    <footer className="Footer">
       <p>
-        &copy; {new Date().getFullYear()} -{" "}
-        <a className="footerLink" href="/">
-          Zoom
-        </a>{" "}
-        All Right Reserved
+        &copy; {new Date().getFullYear()} - <a href="/">Zoom</a> All Right
+        Reserved
       </p>
     </footer>
   );

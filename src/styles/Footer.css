@@ -1,0 +1,14 @@
+.Footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 110px;
+  background: var(--statsBgColor);
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.Footer a {
+  color: #10cab7;
+}
