@@ -1,4 +1,5 @@
 import React from "react";
+import "../styles/Stats.css";
 
 const stats = [
   {
@@ -25,9 +26,9 @@ const stats = [
 
 const Stats = () => {
   return (
-    <div id="stats">
+    <div id="stats" className="Stats">
       {stats.map(s => (
-        <div key={s.name} className="card">
+        <div key={s.name} className="Stats_card">
           <img src={`./img/${s.icon}`} alt={s.name} />
           <h2 className="total">{s.total}</h2>
           <p>{s.name}</p>

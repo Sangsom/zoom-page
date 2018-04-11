@@ -1,0 +1,27 @@
+.Stats {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 340px;
+  background: var(--statsBgColor);
+}
+
+.Stats_card {
+  text-align: center;
+  margin: 0 80px;
+}
+
+.Stats_card img {
+  width: auto;
+}
+
+.Stats_card h2.total {
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.Stats_card p {
+  font-size: 13px;
+  color: var(--blueColor);
+  text-transform: uppercase;
+}

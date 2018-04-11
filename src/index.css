@@ -75,36 +75,6 @@ a:active {
   border-radius: var(--borderRadius);
 }
 
-/* Stats Section */
-
-#stats {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 340px;
-  background: var(--statsBgColor);
-}
-
-#stats .card {
-  text-align: center;
-  margin: 0 80px;
-}
-
-#stats .card img {
-  width: auto;
-}
-
-#stats .card h2.total {
-  font-weight: 400;
-  color: #ffffff;
-}
-
-#stats .card p {
-  font-size: 13px;
-  color: var(--blueColor);
-  text-transform: uppercase;
-}
-
 /* Team Section */
 
 #team {
