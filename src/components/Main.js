@@ -8,6 +8,7 @@ import Team from "./Team";
 import Quote from "./Quote";
 import Newsletter from "./Newsletter";
 import About from "./About";
+import Add from "./Add";
 
 const Main = () => {
   return (
@@ -21,6 +22,7 @@ const Main = () => {
       <Quote />
       <Newsletter />
       <About />
+      <Add />
     </main>
   );
 };
