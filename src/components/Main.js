@@ -11,6 +11,7 @@ import About from "./About";
 import Add from "./Add";
 import Clients from "./Clients";
 import ContactUs from "./ContactUs";
+import Map from "./Map";
 
 const Main = () => {
   return (
@@ -27,6 +28,7 @@ const Main = () => {
       <Add />
       <Clients />
       <ContactUs />
+      <Map />
     </main>
   );
 };

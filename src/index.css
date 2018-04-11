@@ -759,3 +759,31 @@ form button {
   /* Microsoft Edge */
   color: #ffffff;
 }
+
+/* Map Section */
+
+#mapSection {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: 400px;
+  background-color: rgb(35, 46, 61);
+}
+
+#mapSection .right {
+  display: flex;
+  align-items: center;
+  margin-left: 23%;
+}
+
+#mapSection .address {
+  width: 370px;
+  height: 170px;
+  background: #50e3cb;
+  padding: 1.5rem 3rem;
+}
+
+#mapSection .address p {
+  font-weight: 500;
+  font-size: 15px;
+  color: #ffffff;
+}
