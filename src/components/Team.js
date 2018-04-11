@@ -1,4 +1,5 @@
 import React from "react";
+import "../styles/Team.css";
 
 const teamMembers = [
   {
@@ -33,8 +34,8 @@ const teamMembers = [
 
 const Team = () => {
   return (
-    <section id="team">
-      <div className="wrapper">
+    <section id="team" className="Team">
+      <div className="Team_wrapper">
         <h2>Behold the Power of Team.</h2>
         <p>
           Eum cu tantas legere complectitur, hinc utamur ea eam. Eum patrioque
@@ -43,7 +44,7 @@ const Team = () => {
         </p>
       </div>
 
-      <div className="teamWrapper">
+      <div className="Team_membersWrapper">
         {teamMembers.map((member, index) => (
           <div key={index} className="card">
             <img src={`./img/${member.photo}`} alt={member.name} />
