@@ -75,50 +75,6 @@ a:active {
   border-radius: var(--borderRadius);
 }
 
-/* About Section */
-
-#about {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  height: 490px;
-}
-
-#about .left {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  padding-right: 30px;
-}
-
-#about .right {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  padding-left: 30px;
-}
-
-#about img {
-  width: auto;
-  max-height: 300px;
-}
-
-#about .wrapper {
-  max-width: 60%;
-}
-
-#about h2 {
-  font-weight: 500;
-  font-size: 20px;
-  color: var(--darkGray);
-}
-
-#about p {
-  font-weight: 300;
-  font-size: 13px;
-  color: var(--lightGray);
-}
-
 /* Add Section */
 
 #add {

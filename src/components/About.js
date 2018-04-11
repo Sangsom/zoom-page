@@ -1,13 +1,14 @@
 import React from "react";
+import "../styles/About.css";
 
 const About = () => {
   return (
-    <section id="about">
-      <div className="left">
-        <img src="./img/about-left.png" alt="" />
+    <section id="about" className="About">
+      <div className="About_left">
+        <img src="./img/about-left.png" alt="About" />
       </div>
-      <div className="right">
-        <div className="wrapper">
+      <div className="About_right">
+        <div className="About_wrapper">
           <h2>About Some Site</h2>
           <p>
             Lorem ipsum dolor sit amet, quod iusto senserit at his, animal
