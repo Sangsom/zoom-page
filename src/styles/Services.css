@@ -1,0 +1,42 @@
+/* Services */
+
+#serviceSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+}
+
+.Services {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.Services_card {
+  width: 271px;
+  height: 276px;
+  overflow: hidden;
+  text-align: center;
+  margin: 0 20px;
+  margin-bottom: 90px;
+}
+
+.Services_card img {
+  width: 129px;
+  height: 129px;
+}
+
+.Services_card h2 {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 15px;
+  color: var(--darkGray);
+  margin-bottom: 2.5rem;
+}
+
+.Services_card p {
+  font-size: 13px;
+  color: var(--lightGray);
+}

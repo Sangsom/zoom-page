@@ -51,47 +51,28 @@ a:active {
   text-decoration: none;
 }
 
-/* Services */
-
-#serviceSection {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 600px;
-}
-
-.services {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-.services .card {
-  width: 271px;
-  height: 276px;
-  overflow: hidden;
-  text-align: center;
-  margin: 0 20px;
-  margin-bottom: 90px;
-}
-
-.services .card img {
-  width: 129px;
-  height: 129px;
-}
-
-.services .card h2 {
-  font-weight: 700;
+/* Action Button */
+.actionButton {
+  display: inline-block;
   text-transform: uppercase;
-  font-size: 15px;
-  color: var(--darkGray);
-  margin-bottom: 2.5rem;
-}
-
-.services .card p {
-  font-size: 13px;
-  color: var(--lightGray);
+  font-weight: 500;
+  padding: 25px 65px;
+  background-image: -moz-linear-gradient(
+    -90deg,
+    rgb(255, 108, 84) 1%,
+    rgb(255, 43, 89) 99%
+  );
+  background-image: -webkit-linear-gradient(
+    -90deg,
+    rgb(255, 108, 84) 1%,
+    rgb(255, 43, 89) 99%
+  );
+  background-image: -ms-linear-gradient(
+    -90deg,
+    rgb(255, 108, 84) 1%,
+    rgb(255, 43, 89) 99%
+  );
+  border-radius: var(--borderRadius);
 }
 
 /* Webpages */

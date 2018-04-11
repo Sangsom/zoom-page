@@ -18,7 +18,7 @@ class Header extends Component {
         </div>
         <div className="Header_bottom">
           <h1>Try Design, You'll Like It.</h1>
-          <a href="" className="Header_actionButton">
+          <a href="" className="actionButton">
             Show me then !!!
           </a>
         </div>

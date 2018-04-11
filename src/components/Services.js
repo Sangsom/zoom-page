@@ -1,10 +1,11 @@
 import React from "react";
+import "../styles/Services.css";
 
 const Services = () => {
   return (
     <div id="serviceSection">
-      <div className="services">
-        <div className="card">
+      <div className="Services">
+        <div className="Services_card">
           <img src="./img/web-design.png" alt="Web Design" />
           <h2>Web Design</h2>
           <p>
@@ -12,7 +13,7 @@ const Services = () => {
             utamur ea eam ustolion mplectitur, hinc utal.
           </p>
         </div>
-        <div className="card">
+        <div className="Services_card">
           <img src="./img/graphic-design.png" alt="Graphic Design" />
           <h2>Graphic Design</h2>
           <p>
@@ -21,7 +22,7 @@ const Services = () => {
             hinc utal.
           </p>
         </div>
-        <div className="card">
+        <div className="Services_card">
           <img src="./img/programming.png" alt="Programming" />
           <h2>Programming</h2>
           <p>
@@ -29,7 +30,7 @@ const Services = () => {
             com , eam ustolion mplectitur, hinc utal.
           </p>
         </div>
-        <div className="card">
+        <div className="Services_card">
           <img src="./img/photography.png" alt="Photography" />
           <h2>Photography</h2>
           <p>
