@@ -9,6 +9,7 @@ import Quote from "./Quote";
 import Newsletter from "./Newsletter";
 import About from "./About";
 import Add from "./Add";
+import Clients from "./Clients";
 
 const Main = () => {
   return (
@@ -23,6 +24,7 @@ const Main = () => {
       <Newsletter />
       <About />
       <Add />
+      <Clients />
     </main>
   );
 };
