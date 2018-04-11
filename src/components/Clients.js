@@ -1,4 +1,5 @@
 import React from "react";
+import "../styles/Clients.css";
 
 const clientData = [
   {
@@ -23,8 +24,8 @@ const clientData = [
 
 const Clients = () => {
   return (
-    <section id="clients">
-      <div className="wrapper">
+    <section id="clients" className="Clients">
+      <div className="Clients_wrapper">
         <h2>What clients say</h2>
         <p>
           Eum cu tantas legere complectitur, hinc utamur ea eam. Eum patrioque
@@ -32,7 +33,7 @@ const Clients = () => {
           vis cu ubique referrentur, sed eu dicant expetendis.
         </p>
       </div>
-      <div className="clientsWrapper">
+      <div className="Clients_feedbackWrapper">
         {clientData.map((client, index) => (
           <div key={index} className="card">
             <h2 className="name">{client.name}</h2>
