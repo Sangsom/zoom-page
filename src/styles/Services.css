@@ -5,18 +5,20 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 600px;
+  min-height: 600px;
+  padding: 2rem;
 }
 
 .Services {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .Services_card {
-  width: 271px;
-  height: 276px;
+  max-width: 271px;
+  max-height: 276px;
   overflow: hidden;
   text-align: center;
   margin: 0 20px;

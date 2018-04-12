@@ -1,43 +1,44 @@
 import React from "react";
 import "../styles/Services.css";
 
+const services = [
+  {
+    title: "Web Design",
+    img: "web-design.png",
+    description:
+      "Eum cu tantas legere complectitur.Tantas legere complectitur, hinc utamur ea eam ustolion mplectitur, hinc utal."
+  },
+  {
+    title: "Graphic Design",
+    img: "graphic-design.png",
+    description:
+      "Eum cu tantas legere complectitur, hinc utamur ea eaum cu tantas      legere complectitur.Tantas legere complectitur ustolion mplectitur, hinc utal."
+  },
+  {
+    title: "Programming",
+    img: "programming.png",
+    description:
+      "Eum cu tantas legere complectitur, hinc utamur ea e cu tantas legere com , eam ustolion mplectitur, hinc utal."
+  },
+  {
+    title: "Photography",
+    img: "photography.png",
+    description:
+      "Eum cu tantas legere complectitur.Tantas legere complectitur, hinc utamur ea eam ustolion mplectitur, hinc utal."
+  }
+];
+
 const Services = () => {
   return (
     <div id="serviceSection">
       <div className="Services">
-        <div className="Services_card">
-          <img src="./img/web-design.png" alt="Web Design" />
-          <h2>Web Design</h2>
-          <p>
-            Eum cu tantas legere complectitur.Tantas legere complectitur, hinc
-            utamur ea eam ustolion mplectitur, hinc utal.
-          </p>
-        </div>
-        <div className="Services_card">
-          <img src="./img/graphic-design.png" alt="Graphic Design" />
-          <h2>Graphic Design</h2>
-          <p>
-            Eum cu tantas legere complectitur, hinc utamur ea eaum cu tantas
-            legere complectitur.Tantas legere complectitur ustolion mplectitur,
-            hinc utal.
-          </p>
-        </div>
-        <div className="Services_card">
-          <img src="./img/programming.png" alt="Programming" />
-          <h2>Programming</h2>
-          <p>
-            Eum cu tantas legere complectitur, hinc utamur ea e cu tantas legere
-            com , eam ustolion mplectitur, hinc utal.
-          </p>
-        </div>
-        <div className="Services_card">
-          <img src="./img/photography.png" alt="Photography" />
-          <h2>Photography</h2>
-          <p>
-            Eum cu tantas legere complectitur.Tantas legere complectitur, hinc
-            utamur ea eam ustolion mplectitur, hinc utal.
-          </p>
-        </div>
+        {services.map((service, index) => (
+          <div key={index} className="Services_card">
+            <img src={`./img/${service.img}`} alt={service.title} />
+            <h2>{service.title}</h2>
+            <p>{service.description}</p>
+          </div>
+        ))}
       </div>
       <a href="" className="actionButton">
         Need service?
