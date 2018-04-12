@@ -90,3 +90,39 @@
 .Portfolio a {
   margin-top: 2rem;
 }
+
+@media screen and (max-width: 1023px) {
+  .Portfolio_header {
+    width: 80%;
+    padding-top: 1rem;
+  }
+  .Portfolio h2 {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Portfolio_projects ul li {
+    font-size: 13px;
+    padding: 15px;
+  }
+  .Portfolio_projectCard h2 {
+    font-size: 13px;
+  }
+  .Portfolio_projectCard p {
+    font-size: 11px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .Portfolio_projectCard .content {
+    padding: 1rem;
+  }
+  .Portfolio_projects nav {
+    width: 80%;
+  }
+  .Portfolio_projects ul li {
+    text-align: center;
+    float: none;
+  }
+}
