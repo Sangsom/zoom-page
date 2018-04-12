@@ -1,0 +1,33 @@
+.Navigation_responsive {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.Navigation_responsive ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: var(--linkSize);
+  text-transform: uppercase;
+}
+
+.Navigation_responsive ul li {
+  padding: 1rem 1.5rem;
+  text-align: center;
+  background-color: rgba(255, 43, 89, 0.9);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.Navigation_responsive ul li:hover {
+  background-color: rgba(255, 43, 89, 0.8);
+}
+
+.Navigation_responsive li:hover,
+.Navigation_responsive li:hover a {
+  display: block;
+  cursor: pointer;
+  color: #10cab7;
+  width: 100%;
+}

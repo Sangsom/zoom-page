@@ -1,33 +1,20 @@
 import React, { Fragment } from "react";
 import MediaQuery from "react-responsive";
+import ResponsiveNavbar from "./ResponsiveNavbar";
+import "../styles/hamburgers.css";
 import "../styles/Navigation.css";
+import NavLinks from "./NavLinks";
 
 const Navigation = () => {
   return (
     <Fragment>
       <MediaQuery minDeviceWidth={1024}>
         <nav className="Navigation">
-          <ul>
-            <li className="active">
-              <a href="/">Home</a>
-            </li>
-            <li>
-              <a href="#serviceSection">Services</a>
-            </li>
-            <li>
-              <a href="#portfolio">Portfolio</a>
-            </li>
-            <li>
-              <a href="#about">About</a>
-            </li>
-            <li>
-              <a href="#contactUs">Contact</a>
-            </li>
-          </ul>
+          <NavLinks />
         </nav>
       </MediaQuery>
       <MediaQuery maxDeviceWidth={1023}>
-        <p>Hamburegr</p>
+        <ResponsiveNavbar />
       </MediaQuery>
     </Fragment>
   );

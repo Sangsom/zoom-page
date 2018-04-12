@@ -42,3 +42,28 @@
   font-family: "Roboto";
   font-weight: 300;
 }
+
+@media screen and (max-width: 1023px) {
+  .Header_top {
+    justify-content: space-around;
+  }
+
+  .Header_left {
+    flex-basis: 50%;
+    text-align: center;
+  }
+
+  .Header_left img {
+    width: auto;
+  }
+
+  .Header_right {
+    flex-basis: 50%;
+  }
+
+  .Header_right button {
+    position: absolute;
+    top: 20px;
+    right: 0;
+  }
+}
