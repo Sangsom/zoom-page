@@ -44,3 +44,11 @@
 .Navigation a:hover {
   color: var(--darkGray);
 }
+
+.Navigation a:hover {
+  color: #10cab7;
+}
+
+.Navigation li.active a:hover {
+  color: #ffffff;
+}
