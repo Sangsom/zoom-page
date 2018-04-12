@@ -66,4 +66,32 @@
     top: 20px;
     right: 0;
   }
+
+  .Header_bottom {
+    max-height: 400px;
+  }
+
+  .Header_bottom h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Header_bottom {
+    max-height: 300px;
+  }
+  .Header_bottom h1 {
+    font-size: 2rem;
+  }
+
+  .actionButton {
+    font-size: 12px;
+    padding: 15px 45px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .Header_bottom h1 {
+    font-size: 1.5rem;
+  }
 }
