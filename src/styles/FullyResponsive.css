@@ -1,4 +1,5 @@
 .FullyResponsive {
+  position: relative;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   height: 570px;
@@ -15,8 +16,7 @@
 }
 
 .FullyResponsive h2 {
-  font-weight: 300;
-  font-style: italic;
+  font-weight: 400;
   color: var(--darkGray);
 }
 
@@ -27,28 +27,52 @@
   margin-bottom: 60px;
 }
 
-.FullyResponsive_left {
-  position: relative;
+.FullyResponsive img {
+  max-width: 100%;
+  width: 100%;
+}
+
+.FullyResponsive_phoneWrapper {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
 }
 
-.FullyResponsive_phone {
-  position: relative;
-  display: inline-block;
-}
-
 .FullyResponsive_leftPhone {
-  width: 214px;
-  height: 434px;
+  position: relative;
+  right: -10%;
   z-index: 15;
 }
 
 .FullyResponsive_rightPhone {
-  width: 162px;
-  height: 327px;
-  left: -50px;
-  bottom: -10px;
+  position: relative;
+  right: 5%;
   z-index: 10;
+}
+
+@media screen and (max-width: 1023px) {
+  .FullyResponsive h2 {
+    font-size: 1.8rem;
+  }
+  .FullyResponsive p {
+    font-size: 13px;
+  }
+  .FullyResponsive_wrapper {
+    max-width: 400px;
+    padding: 1rem;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .FullyResponsive h2 {
+    font-size: 1.2rem;
+  }
+  .FullyResponsive p {
+    font-size: 11px;
+  }
+  .FullyResponsive_wrapper {
+    max-width: 300px;
+    padding: 2rem;
+  }
 }
