@@ -19,17 +19,24 @@
 }
 
 .Add_left {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: flex-end;
   flex-basis: 45%;
+  margin: 2rem;
 }
 
-.Add img {
+.Add_left .Add_wrapper {
   position: relative;
+
+  right: -10%;
+  bottom: -15%;
+}
+
+.Add_left .Add_wrapper img {
+  max-width: 100%;
   width: auto;
-  right: -210px;
-  bottom: -40px;
 }
 
 .Add_right {
@@ -62,4 +69,24 @@
   font-weight: 400;
   font-size: 13px;
   color: #ffffff;
+}
+
+@media screen and (max-width: 568px) {
+  .Add {
+    flex-direction: column-reverse;
+    height: auto;
+  }
+
+  .Add_right {
+    align-items: center;
+  }
+
+  .Add_right .Add_wrapper {
+    max-width: 80%;
+    text-align: center;
+  }
+
+  .Add_left .Add_wrapper {
+    right: 0;
+  }
 }
