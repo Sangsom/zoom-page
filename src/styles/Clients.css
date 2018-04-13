@@ -69,3 +69,29 @@
   font-size: 13px;
   color: #ffffff;
 }
+
+@media screen and (max-width: 1023px) {
+  .Clients {
+    height: auto;
+    margin: 2rem;
+  }
+  .Clients_wrapper {
+    max-width: 80%;
+  }
+  .Clients_feedbackWrapper .card {
+    max-height: none;
+  }
+  .Clients_feedbackWrapper {
+    grid-template-columns: minmax(100px, max-content);
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .Clients h2 {
+    font-size: 1.5rem;
+  }
+  .Clients p {
+    font-size: 11px;
+  }
+}
