@@ -54,3 +54,47 @@
   color: var(--darkGray);
   font-size: 15px;
 }
+
+@media screen and (max-width: 1023px) {
+  .Team {
+    height: auto;
+    padding: 2rem;
+  }
+
+  .Team_wrapper h2 {
+    font-size: 1.8rem;
+  }
+
+  .Team_membersWrapper .card h2 {
+    font-weight: 1.8rem;
+  }
+
+  .Team_membersWrapper .card p {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Team_membersWrapper {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .Team_membersWrapper .card {
+    max-width: 200px;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 588px) {
+  .Team_wrapper {
+    max-width: 80%;
+  }
+  .Team_membersWrapper .card h2 {
+    font-weight: 1.2rem;
+  }
+
+  .Team_membersWrapper .card p {
+    font-size: 13px;
+  }
+}
