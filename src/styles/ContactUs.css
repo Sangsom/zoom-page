@@ -89,3 +89,26 @@
   /* Microsoft Edge */
   color: #ffffff;
 }
+
+@media screen and (max-width: 1023px) {
+  .ContactUs_wrapper {
+    max-width: 80%;
+  }
+  .ContactUs_formWrapper {
+    max-width: 80%;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .ContactUs_form .halfWrapper {
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+  .ContactUs_form .halfWrapper input {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .ContactUs_form button {
+    width: 100%;
+  }
+}
