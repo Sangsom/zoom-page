@@ -23,3 +23,13 @@
   font-size: 15px;
   color: #ffffff;
 }
+
+@media screen and (max-width: 768px) {
+  .Map_right {
+    align-items: flex-end;
+    margin: 0;
+  }
+  .Map_address {
+    width: 100%;
+  }
+}
