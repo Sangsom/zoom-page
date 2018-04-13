@@ -5,7 +5,7 @@ import Navigation from "./HeaderMenu";
 class Header extends Component {
   render() {
     return (
-      <header className="Header">
+      <header className="Header" id="home">
         <div className="Header_top">
           <div className="Header_left">
             <a href="/">

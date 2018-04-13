@@ -4,7 +4,7 @@ const NavLinks = () => {
   return (
     <ul>
       <li className="active">
-        <a href="/">Home</a>
+        <a href="#home">Home</a>
       </li>
       <li>
         <a href="#serviceSection">Services</a>
