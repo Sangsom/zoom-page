@@ -1,14 +1,18 @@
 .Map {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  position: relative;
   height: 400px;
   background-color: rgb(35, 46, 61);
 }
 
+#map {
+  width: 100%;
+  height: 100%;
+}
+
 .Map_right {
-  display: flex;
-  align-items: center;
-  margin-left: 23%;
+  position: absolute;
+  right: 5%;
+  top: 30%;
 }
 
 .Map_address {
@@ -26,8 +30,9 @@
 
 @media screen and (max-width: 768px) {
   .Map_right {
-    align-items: flex-end;
-    margin: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
   }
   .Map_address {
     width: 100%;
