@@ -2,17 +2,20 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   height: 340px;
   background: var(--statsBgColor);
+  padding: 2rem;
 }
 
 .Stats_card {
   text-align: center;
-  margin: 0 80px;
+  margin: 1rem 5%;
 }
 
 .Stats_card img {
   width: auto;
+  max-width: 100%;
 }
 
 .Stats_card h2.total {
@@ -24,4 +27,22 @@
   font-size: 13px;
   color: var(--blueColor);
   text-transform: uppercase;
+}
+
+@media screen and (max-width: 1023px) {
+  .Stats {
+    height: auto;
+  }
+  .Stats_card h2.total {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Stats_card h2.total {
+    font-size: 1.2rem;
+  }
+  .Stats_card p {
+    font-size: 11px;
+  }
 }
