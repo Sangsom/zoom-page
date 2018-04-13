@@ -8,7 +8,8 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  padding-right: 30px;
+  padding-right: 5%;
+  padding-left: 5%;
 }
 
 .About_right {
@@ -21,6 +22,7 @@
 
 .About img {
   width: auto;
+  max-width: 100%;
   max-height: 300px;
 }
 
@@ -38,4 +40,28 @@
   font-weight: 300;
   font-size: 13px;
   color: var(--lightGray);
+}
+
+@media screen and (max-width: 768px) {
+  .About {
+    grid-template-areas:
+      "right"
+      "left";
+    grid-template-columns: repeat(1, 1fr);
+    height: auto;
+    padding: 2rem;
+    grid-gap: 20px;
+  }
+  .About_left {
+    grid-area: left;
+  }
+  .About_right {
+    align-items: center;
+    grid-area: right;
+    text-align: center;
+    padding: 0;
+  }
+  .About_wrapper {
+    max-width: 80%;
+  }
 }
